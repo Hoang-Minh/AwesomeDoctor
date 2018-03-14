@@ -64,8 +64,8 @@ $(document).ready(function() {
     var coordinatesValue = [];
     $('#search').on('click', function() {
         
-        $('#doctorData').show()
-        $('#doctorData').empty();
+        $('#doctorData').show();
+        
         coordinatesValue = [];
 
         specialty = $('#specialty').val();
@@ -83,7 +83,7 @@ $(document).ready(function() {
 
                 coordinatesValue.push(latitude, longtitude);
 
-            }           
+            }
 
             betterDoctor(specialty, coordinatesValue[0], coordinatesValue[1], radius);           
 
@@ -102,6 +102,8 @@ $(document).ready(function() {
             url: resource_url,
             method: 'GET'
         }).then(function(resp) {
+            // debugger
+            // $('.body-item').remove();
             console.log(resp);
 
             doctorArray = resp.data;
@@ -130,6 +132,7 @@ $(document).ready(function() {
     };
 
     $(document).on("click", ".item", function() {
+        //$(".item").empty();
         var index = $(this).attr("data-index");
         var content = $(this).find(".bio");
 
@@ -139,9 +142,11 @@ $(document).ready(function() {
         console.log("numbers: " + numbers);
         
         var bio = "<p id='intro'>" + doctorArray[index].profile.bio + "</p>";
-        var contacts = "<div id='contact-info'>";        
+        var contacts = "<div id='contact-info'>";
+        console.log(bio);
         contacts += address + "<br>" + numbers;
         contacts += "</div>";
+        content.empty();
         content.append(bio, contacts);        
         
         // add google map in here
