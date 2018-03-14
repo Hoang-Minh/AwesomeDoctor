@@ -1,5 +1,6 @@
 // initializing firebase
 $(document).ready(function() {
+    $('#doctorData').hide()
 
     // var config = {
     //     apiKey: "AIzaSyCZFgxlm7OYDtYudao20tc-24xjNhnPUa8",
@@ -64,6 +65,7 @@ $(document).ready(function() {
     var doctorArray = [];
     var coordinatesValue = [];
     $('#search').on('click', function() {
+        $('#doctorData').show()
         coordinatesValue = [];
         // $("#specialty").val("");
         // $("#location").val("");
