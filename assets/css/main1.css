@@ -6,9 +6,73 @@ body {
     background-image: url(../images/medical.jpg)
     /* opacity=.5; */
 }
+::placeholder{
+    color: darkgray;
+}
+.material-icons{
+    margin:10px;
+}
 
+
+#input {
+    background: rgba(255, 255, 255, 0.548); 
+    fill-opacity: 0.5;
+    height: 80px;
+    width: 100%;
+    z-index:1;
+    
+}
+
+#search{
+    margin: 10px;
+    z-index: 2;
+    
+}
+
+#notes{
+    height: 80px;
+    width: 100%;
+    
+}
+
+.icon-block{
+    background: rgba(255, 255, 255, 0.363);
+    width:100%;
+    height: auto;
+    padding:25px;
+    fill-opacity:0.5;
+    filter: alpha(opacity,50);
+}
+
+.collapsible-body{
+    background: rgba(233, 233, 228, 0.8);
+    fill-opacity: .8;
+}
+
+.collapsible-header{
+    background: #3d5afe;
+    font-family: 'Arial ', sans-serif;
+    padding: 5px;
+    border: goldenrod effect;
+    margin: 2px;
+    
+}
+
+.results{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 .brand-logo{
-    font: Bodoni MT;
+    font-family: Big Calson, 'Book Antigua', serif;
+    font-color: gold;
+    font-size: 72pt;
+}
+.logo-img{
+    height: 50px;
+    width: 50px;
+}
+.nav-title{
+    font-family: cursive;
+    font-size: small;
 }
 .nav-title{
     font-size: 14px;
