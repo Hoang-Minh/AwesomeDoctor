@@ -55,7 +55,7 @@ label{
 }
 
 .collapsible-header{
-    background: #3d5afe;
+    background: lightcoral;
     font-family: 'Arial ', sans-serif;
     padding: 5px;
     border: goldenrod effect;
@@ -150,10 +150,10 @@ body {
     flex-direction: column;
   }
 
-  main {
-    flex: 1 0 auto;
-  }
-      
-  #connect {
-      padding-left: 130px;
-  }
+main {
+  flex: 1 0 auto;
+}
+
+#connect {
+    padding-left: 130px;
+}

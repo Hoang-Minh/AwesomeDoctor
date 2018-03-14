@@ -135,7 +135,6 @@ $(document).ready(function() {
 
         var address = getOfficeAddress(doctorArray[index].practices[0]);        
         var numbers = displayContactNumbers(doctorArray[index].practices[0].phones);
-
         console.log("address: " + address);
         console.log("numbers: " + numbers);
         
@@ -143,8 +142,6 @@ $(document).ready(function() {
         var contacts = "<div id='contact-info'>";        
         contacts += address + "<br>" + numbers;
         contacts += "</div>";
-
-
         content.append(bio, contacts);        
         
         // add google map in here
