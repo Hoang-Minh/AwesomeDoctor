@@ -65,6 +65,7 @@ $(document).ready(function() {
     $('#search').on('click', function() {
         
         $('#doctorData').show();
+        $('#doctorData').empty();
         
         coordinatesValue = [];
 
